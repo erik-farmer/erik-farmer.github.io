@@ -1,0 +1,13 @@
+---
+layout: posts
+title:  "New Site!"
+date:   2015-05-07 19:59:19
+categories: jekyll update
+---
+<p>
+  Back when I was learning to program I had a blog to chronicle my journey. Unfortunately once I started my first internship it fell by the wayside as I was spending more time off the clock filling my newly found knowledge gaps. Now that I am starting to write more code at home and continuously learning I want to write more about my personal growth as a Junior Developer.
+</p>
+
+<p>
+  When I was transitioning from Ruby on Rails to Python/Django for work a lot of my questions were answered by people on Stack Overflow and others who took the time to write a problem and solution. My hope is that I can do the same for another developer.
+</p>

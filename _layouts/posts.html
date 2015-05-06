@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="card">
+              <h2>{{ page.title }}</h2>
+              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+              {{ content }}
+              <a class="back-link" href="/">back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

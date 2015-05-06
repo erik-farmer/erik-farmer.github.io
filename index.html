@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>$ whoami</h2>
+      <div class="card">
+        <p>
+          I am a programmer in the California Bay Area.
+        </p>
+        <p>
+          During my undergrad I interned for a Bay Area video game publisher and wanted to be in the games industry. After graduating and working in the field full time I realized that the day to day work did not carry the same excitement as working a trade show floor did.
+        </p>
+        <p>
+          I had been learning basic ruby and python on the side and found the challenge so enjoyable I decided to quit my job and commit to learning web development full time. That was 2013, since then I have worked with a satellite hardware start up and work currently as an internal application developer at Google through Astreya Partners Inc.
+        </p>
+        <p>I love <b>full stack development</b> and currently use <b>Python</b>/<b>Django</b> on <b>Google App Engine</b>. I also have experience working with <b>Ruby on Rails</b> but more importantly I enjoy learning new things.</p>
+        <p>In my free time I like to make small tools that help me learn more about programming, explore the outdoors with my dog, and building gaming PCs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Projects</h2>
+      <div class="card">
+        <p>
+          Here are some random things I built in my spare time.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>App</th>
+              <th>Learning Objective</th>
+            </tr>
+          </thead>
+          <tr>
+            <td><a href="http://www.lets-get-crockin.appspot.com" target="_blank">Let's Get Crockin'!</a></td>
+            <td>Static site deployment with Google App Engine.</td>
+          </tr>
+          <tr>
+            <td><a href="http://hearthstonethreats.herokuapp.com/" target="_blank">Heartstone Threats</a></td>
+            <td>Learn basic Ember.js site architecture.</td>
+          </tr>
+          <tr>
+            <td><a href="https://hearthstoneapi.herokuapp.com/" target="_blank">Hearthstone API</a></td>
+            <td>API development with Ruby on Rails.</td>
+          </tr>
+          <tr>
+            <td><a href="https://reddit-miner.herokuapp.com/" target="_blank">Reddit Gold Tracker</a></td>
+            <td>Running manage.py commands using Heroku style cron tasks.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>Blog</h2>
+      <div class="card">
+        <ul class="posts">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a> 
+              <time datetime="{{ post.date | date_to_xmlschema }}" class="preview-time">{{ post.date | date_to_string }}</time>
+              {{ post.excerpt }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
