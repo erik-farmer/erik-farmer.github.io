@@ -792,8 +792,8 @@ body {
   cursor: pointer;
 }
 
-.icon-wrapper a:visited {
-  color: #FFFFFF;
+i {
+  color: #FFFFFF
 }
 
 /*MAIN SECTION*/
