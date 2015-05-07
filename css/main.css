@@ -790,6 +790,12 @@ body {
   line-height: 56px;
   font-size: 20pt;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.icon-wrapper:hover {
+  background-color: #8aa2ae;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 i {
