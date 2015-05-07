@@ -762,6 +762,7 @@ body {
 .profile-img {
   border-radius: 50%;
   float: left;
+  position: relative;
 }
 
 .social-links {
@@ -791,6 +792,10 @@ body {
   cursor: pointer;
 }
 
+.icon-wrapper a:visited {
+  color: #FFFFFF;
+}
+
 /*MAIN SECTION*/
 .card {
   padding: 18px;
@@ -812,8 +817,6 @@ table {
   border-spacing: 0;
 }
 
-
-
 thead {
   border-bottom: 1px solid #d0d0d0;
 }
@@ -828,10 +831,6 @@ td, th {
 
 td a {
   color: black;
-}
-
-.icon-wrapper a:visited {
-  color: #FFFFFF;
 }
 
 .posts {
