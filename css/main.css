@@ -772,7 +772,7 @@ body {
   margin-top: -26px;
 }
 
-.social-links li {
+.social-links a {
   float: left;
   margin-left: 12px;
 }
