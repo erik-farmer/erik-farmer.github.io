@@ -11,8 +11,8 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       var current_location = document.location.hostname;
-      var is_local_dev = (current_location != 'localhost' || current_location != '127.0.0.1')
-      if (is_local_dev) {
+      var is_local_dev = (current_location == 'localhost' || current_location == '127.0.0.1')
+      if (!is_local_dev) {
         ga('create', 'UA-42880425-4', 'auto');
         ga('send', 'pageview');
       }
