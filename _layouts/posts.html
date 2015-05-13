@@ -21,8 +21,12 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-42880425-4', 'auto');
-        ga('send', 'pageview');
+        var current_location = document.location.hostname;
+        var is_local_dev = (current_location != 'localhost' || current_location != '127.0.0.1')
+        if (is_local_dev) {
+          ga('create', 'UA-42880425-4', 'auto');
+          ga('send', 'pageview');
+        }
 
       </script>
   </body>
