@@ -1,0 +1,16 @@
+---
+layout: posts
+title:  "Good news after time away"
+date:   2015-08-24 23:45:00
+---
+<p>
+  I had recently taken some time off from side projects and learning (but for good reason!) but have returned to hopefully blog more!
+</p>
+
+<p>
+  In March of 2014 I was given an opportunity that I never thought I would have obtained. I still remember getting the recruiter call and not knowing how to process the fact that, even in the capacity of a consultant, I was going to be working at Google. In my sixteen months of working on the CorpNet Business Intelligence team I switched from Ruby on Rails to Python and Django, learned a tremendous amount about application development, got to work with different internal teams and deploy some cool products. Working on site in Mountain View was amazing but there came a time when I knew that in order for me to grow more as an engineer I would need to work on a larger team. Some team members shifted to management, others looked at opportunities on new teams and suddenly I found was working by myself on projects. While this gave me a lot of freedom to make design choices I felt it wasn't what was best for my personal growth and I decided to start pursuing new opportunities.
+</p>
+
+<p>
+  I'm happy to say that I have found a new home with <a href="http://www.gettalent.com">getTalent</a>. This job will be significantly more challenging, which is good. It will force me to learn and learn quickly. I am on a great team with fun problems to solve and I look forward to future posts regarding the challenges ahead.
+</p>
