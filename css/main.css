@@ -777,29 +777,26 @@ body {
   margin-left: 12px;
 }
 
-.icon-wrapper {
+.fa.md-fa-icon {
+  text-shadow: rgb(67, 88, 97) 0px 0px 0px, rgb(70, 92, 102) 1px 1px 0px,
+  rgb(74, 96, 107) 2px 2px 0px, rgb(77, 100, 111) 3px 3px 0px, rgb(80, 104, 116)
+  4px 4px 0px, rgb(83, 108, 120) 5px 5px 0px, rgb(86, 113, 125) 6px 6px 0px,
+  rgb(90, 117, 130) 7px 7px 0px, rgb(93, 121, 134) 8px 8px 0px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  height: 57px;
+  width: 57px;
+  line-height: 57px;
   border-radius: 50%;
-  background-color: #607D8B;
-  width: 56px;
-  height: 56px;
-  border-radius: 56px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-  z-index: 3;
-  color: #fff;
   text-align: center;
-  line-height: 56px;
-  font-size: 20pt;
+  background-color: rgb(96, 125, 139);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
 
-.icon-wrapper:hover {
+.fa.md-fa-icon:hover {
   background-color: #8aa2ae;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-i {
-  color: #FFFFFF
 }
 
 /*MAIN SECTION*/
