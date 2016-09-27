@@ -4,9 +4,7 @@ title:  "Def Con 24"
 date:   2016-08-12 00:00:00
 ---
 
-<p>I haven't been to a conference since I worked E3 in 2013.</p>
-
-<p>Actually that's a lie; I went to Blizzcon in 2014 (and get to go again this year w00t)</p>
+<p>I haven't been to a conference since I worked E3 in 2013. Actually that's a lie; I went to Blizzcon in 2014 (and get to go again this year w00t)</p>
 
 <p>Even with 3+ years of experience I wasn't quite prepared for attending my first DefCon</p>
 
