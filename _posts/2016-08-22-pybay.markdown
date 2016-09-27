@@ -1,0 +1,26 @@
+---
+layout: posts
+title:  "First Annual PyBay!"
+date:   2016-08-22 00:00:00
+---
+
+<p>Just around 10 days after I mentioned that I never go to conferences I was able to attend another one! PyBay, a spawn of the SF Python MeetUp group, was over the weekend.</p>
+
+<p>Highlights of the con included the Wesley Chun and Raymond Hettinger workshops and the Flask talk from its creator Armin Ronacher. After the workshops I actually felt like I wanted to go to work and improve our codebase or write something new. Hettinger gives one helluva tech talk. There were of course tons of interesting talks that can be checkout out <a href="https://www.youtube.com/channel/UC51aOZF5nnderbuar5D5ifw/videos?sort=dd&view=0&shelf_id=0">here</a> (new ones are getting added).</p>
+
+<p>Participating in the talks got me thinking. You'll see questions on /r/learnpython all the time asking about "what do I do to take my Python code to the next level". For me the first answer is CODE, CODE, CODE. Look on Fiver/UpWork and see what people are looking to pay for and make some MVPs of that work or even pitch a proposal if you're feeling up to it (nothing like getting paid to learn amirite?). Over time you'll build a library of code that can solve a variety of problems and hopefully is written modularly enough that you can produce contract/side work with minimal time spent. Aside from that here are some great things to look into (in no particular order):</p>
+
+<ul>
+    <li>Algorithms/Data Structures if you're just learning to program</li>
+    <li>Context Managers</li>
+    <li>Static Methods</li>
+    <li>Class Methods</li>
+    <li>Decorators</li>
+    <li>Idiomatic Python Style</li>
+    <li>Basic knowledge of common frameworks</li>
+    <li>Integrations with JS frameworks</li>
+    <li>When to use normalized/denormalized data</li>
+    <li>(if you're brave) Meta Classes</li>
+</ul>
+
+<p>Having a solid grasp on the above will make you certainly competent, confident, and most of all employable :)</p>
