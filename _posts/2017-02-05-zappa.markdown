@@ -1,0 +1,21 @@
+---
+layout: posts
+title:  "Zappa"
+date:   2017-02-05 00:00:00
+---
+
+<p>At work we have been using AWS lambda combined with API Gateway more and more. The hardest part about getting a somewhat complicated project up in a serverless architecture is all of the tooling for builds (all python C binary dependencies need to be bundled and included after being compiled on an Amazon Linux AMI) and deployment (adding new endpoints/lambda functions/etc)</p>
+
+<p>In my limited experience making some Prod viable APIs NOTHING beats<a href="https://github.com/Miserlou/Zappa">Zappa</a>. The goal of Zappa is to take an wsgi based python app and create a serverless deployment on AWS. In my professional and personal use I have converted flask apps running in containers on C4 EC2 instances to APIs that cost less than $5/month to run. Here are some of the awesome things Zappa takes care of:</p>
+
+<ul>
+  <li>bundling your code</li>
+  <li>including c dependencies</li>
+  <li>deployment of your lambda functions and API Gateway settings (via Cloud Formation)</li>
+  <li>a variety of non-api gateway integrations (S3, CloudWatch, SNS, etc)</li>
+  <li>an async decorator to perform long running tasks</li>
+  <li>CLI based updates/rollback</li>
+  <li>S3 hosted configuration</li>
+</ul>
+
+<p>As a primarily python/flask dev getting side-projects or work MVPs up and running on the cheap has never been easier.</p>

@@ -1,0 +1,11 @@
+---
+layout: posts
+title:  "Raspberry Pi Emulators"
+date:   2016-12-20 00:00:00
+---
+
+<p>If you're looking for an NES Classic but having no luck check out <a href="https://retropie.org.uk/">RetroPi</a></p>
+
+<p>It is pretty painless to create an image using this OS and get your Raspberry Pi working as a mulitiple emulator machine.</p>
+
+<p>All in all setup took about 30 minutes from start to finish and I had Super Mario World 2 on the projector.</p>
