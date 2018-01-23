@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "New Laptop Setup"
-date:  2018-01-01 00:00:00
+date:  2018-01-08 00:00:00
 ---
 
 I've had to setup new laptops for web development a handful of times and I usually miss one or two things that stop me from moving onto a project.
