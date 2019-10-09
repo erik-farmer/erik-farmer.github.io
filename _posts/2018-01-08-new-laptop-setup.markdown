@@ -18,6 +18,8 @@ Here is a list of things that I like to install on a clean OSX image:
     <li>XCode (developer tools)</li>
     <li>homebrew</li>
     <li>python3</li>
+    <li>pyenv</li>
+    <li>pyenv-virtualenv</li>
     <li>Node</li>
     <li>Slack</li>
     <li>Skype (if I'm interviewing)</li>
