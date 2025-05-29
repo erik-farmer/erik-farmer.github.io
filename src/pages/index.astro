@@ -1,16 +1,109 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Erik Farmer | Senior Data Engineer & Technical Lead" description="Erik Farmer - Senior Data Engineer and Technical Lead specializing in scalable solutions and team leadership.">
+  <!-- Hero Section -->
+  <header class="bg-blue-600 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-6">
+        <img src="/public/profile.jpg" alt="Erik Farmer" class="mx-auto rounded-full w-32 h-32 border-4 border-white">
+      </div>
+      <h1 class="text-4xl font-bold">Erik Farmer</h1>
+      <p class="mt-4 text-lg">Senior Data Engineer & Technical Lead | Building Scalable Solutions</p>
+      <div class="mt-6">
+        <a href="https://github.com/erik-farmer" class="text-white underline mx-2">GitHub</a>
+        <a href="https://linkedin.com/in/farmere" class="text-white underline mx-2">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center">About Me</h2>
+      <p class="mt-6 text-lg text-center max-w-2xl mx-auto">
+        I am a Senior Data Engineer and Technical Lead with over 10 years of experience in designing scalable data systems, developing ETL pipelines, and leading cross-functional teams to deliver impactful solutions. Passionate about optimizing data workflows, mentoring others, and driving technical excellence.
+      </p>
+    </div>
+  </section>
+
+    <!-- Experience Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center">Experience</h2>
+            <div class="mt-8 space-y-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-bold">Senior Data Engineer & Team Lead, PepsiCo</h3>
+                    <p class="text-sm text-gray-600">March 2020 - Present</p>
+                    <ul class="mt-4 list-disc list-inside">
+                        <li>Tech lead for the Supply Chain eCommerce team, managing 8 contractors and 4 FTEs.</li>
+                        <li>Developed scalable ETL pipelines processing 500k+ rows daily.</li>
+                        <li>Implemented team standards for testing and code reviews, improving velocity by 20%.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-bold">Senior Data Engineer, Clover Health</h3>
+                    <p class="text-sm text-gray-600">March 2018 - Feb 2020</p>
+                    <ul class="mt-4 list-disc list-inside">
+                        <li>Led a data integration project saving $10MM annually through optimized ETL pipelines.</li>
+                        <li>Worked with cross-functional teams to define and deliver high-impact solutions.</li>
+                        <li>Mentored junior developers on best practices in data engineering.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-xl font-bold">Software Engineer, getTalent</h3>
+                    <p class="text-sm text-gray-600">August 2015 - August 2017</p>
+                    <ul class="mt-4 list-disc list-inside">
+                        <li>Led development of 5 core APIs used by web and mobile clients.</li>
+                        <li>Optimized API performance, improving response times by 30%.</li>
+                        <li>Collaborated with product managers to define technical requirements and timelines.</li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-6">
+                    <a href="https://linkedin.com/in/farmere" class="text-blue-600 underline">View full experience on LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center">Core Skills</h2>
+            <div class="mt-8 flex flex-wrap justify-center space-x-4">
+                <span class="flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg">
+                    <i class="bi bi-code-slash mr-2"></i>Python
+                </span>
+                <span class="flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg">
+                    <i class="bi bi-amazon mr-2"></i>AWS
+                </span>
+                <span class="flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg">
+                    <i class="bi bi-diagram-3 mr-2"></i>Airflow
+                </span>
+                <span class="flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg">
+                    <i class="bi bi-snow3 mr-2"></i>Snowflake
+                </span>
+                <span class="flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-lg">
+                    <i class="bi bi-server mr-2"></i>Postgres
+                </span>
+            </div>
+        </div>
+    </section>
+
+  <!-- Contact Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold">Contact Me</h2>
+      <p class="mt-4 text-lg">Feel free to reach out via email at <a href="mailto:erikDfarmer@gmail.com" class="text-blue-600 underline">erikDfarmer@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-blue-600 text-white text-center">
+    <p>&copy; 2025 Erik Farmer. All rights reserved.</p>
+  </footer>
+</BaseLayout>
