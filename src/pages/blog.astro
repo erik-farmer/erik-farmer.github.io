@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Blog – Erik Farmer";
+const allPosts = await getCollection("blog");
+
+// Get only Spark-tagged posts, then sort newest first
+const sparkPosts = (await getCollection("blog"))
+  .filter((post) => post.data.tags?.includes("spark"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BaseLayout pageTitle={pageTitle}>
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <!-- Navigation -->
+    <nav class="mb-10">
+      <a href="/" class="text-blue-600 hover:underline text-sm">&larr; Back to Home</a>
+    </nav>
+
+    <!-- Page Heading -->
+    <h1 class="text-4xl font-extrabold mb-2">Blog</h1>
+    <p class="text-gray-600 mb-10">Personal notes, learning logs, and passing thoughts (half for you, half so I don’t forget next week).</p>
+
+    <!-- Section: Spark -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-200 pb-1">Spark</h2>
+      <ul class="space-y-6">
+        {
+          sparkPosts.map((post) => (
+            <li class="bg-white border border-gray-200 rounded-lg shadow-sm p-5 hover:shadow-md transition">
+              <a href={`/posts/${post.slug}/`} class="text-xl font-semibold text-blue-600 hover:underline">
+                {post.data.title}
+              </a>
+              {post.data.description && (
+                <p class="text-sm text-gray-600 mt-2 italic">
+                  "{post.data.description}"
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- Future sections can go here -->
+  </div>
+</BaseLayout>
