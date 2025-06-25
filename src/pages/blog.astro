@@ -9,6 +9,10 @@ const allPosts = await getCollection("blog");
 const sparkPosts = (await getCollection("blog"))
   .filter((post) => post.data.tags?.includes("spark"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const dbPosts = (await getCollection("blog"))
+  .filter((post) => post.data.tags?.includes("db"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 <BaseLayout pageTitle={pageTitle}>
   <div class="max-w-3xl mx-auto px-4 py-12">
@@ -27,6 +31,27 @@ const sparkPosts = (await getCollection("blog"))
       <ul class="space-y-6">
         {
           sparkPosts.map((post) => (
+            <li class="bg-white border border-gray-200 rounded-lg shadow-sm p-5 hover:shadow-md transition">
+              <a href={`/posts/${post.slug}/`} class="text-xl font-semibold text-blue-600 hover:underline">
+                {post.data.title}
+              </a>
+              {post.data.description && (
+                <p class="text-sm text-gray-600 mt-2 italic">
+                  "{post.data.description}"
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- Section: Database Stuff -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-200 pb-1">Database learnings</h2>
+      <ul class="space-y-6">
+        {
+          dbPosts.map((post) => (
             <li class="bg-white border border-gray-200 rounded-lg shadow-sm p-5 hover:shadow-md transition">
               <a href={`/posts/${post.slug}/`} class="text-xl font-semibold text-blue-600 hover:underline">
                 {post.data.title}
