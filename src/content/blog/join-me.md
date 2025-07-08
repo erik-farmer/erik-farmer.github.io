@@ -1,6 +1,6 @@
 ---
 title: "Now I'm bummed `SEMI JOIN` isn't ANSI SQL"
-pubDate: 2025-06-01
+pubDate: 2025-07-01
 tags: ["spark"]
 ---
 I've been doing data engineering for over 5 years now so when I hit the Spark chapter on joins in *Spark: The Definitive Guide*,
